@@ -11,4 +11,8 @@ import "rxjs/Rx";
 })
 export class AppComponent {
   title = Observable.of('app works!');
+  
+  constructor() {
+    const x = Object.assign({ original: 0 }, {newVer: 1});
+  }
 }
