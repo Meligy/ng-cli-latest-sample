@@ -11,8 +11,10 @@ import "rxjs/Rx";
 })
 export class AppComponent {
   title = Observable.of('app works!');
-  
+
+  jsonSource;
+
   constructor() {
-    const x = Object.assign({ original: 0 }, {newVer: 1});
+    this.jsonSource = Object.assign({ original: 0 }, {newVer: 1});
   }
 }
